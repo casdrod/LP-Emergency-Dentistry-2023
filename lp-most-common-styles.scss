@@ -46,6 +46,7 @@ $text: #000000;
 #fixed-tabs i, #fixed-tabs i:before { margin: 0 3px 0 0; }
 #fixed-tabs em { font-size: 14px; margin-top: 4px; font-weight: 700;font-style: normal; text-transform: uppercase; }
 #fixed-tabs strong { font-weight: 900; }
+#fixed-tabs .ra {flex: 2;}
 #fixed-tabs .ra, #fixed-tabs .map { background-color: $primary; }
 #fixed-tabs .call {background-color: $secondary;color: $text;}
 #fixed-tabs .ra em {margin-top: 6px;}
@@ -70,7 +71,7 @@ h3{font-size:32px;line-height:1.41}
 header{position:relative;padding:0;z-index:100;background-color: #fff;
     address{padding:0 8px;}
     .address{text-align:left;display:flex;color: #000;font-size:22px;line-height:1.25;font-weight:400;letter-spacing:.55px;
-        &:hover{color:$secondary}
+        &:hover{color:$tertiary}
         i:before {color: $tertiary;font-size: 22px;margin-left: -10px;margin-right: 10px;margin-top: 5px;}
     }
     #header-details {
@@ -81,6 +82,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
                 &:before {font-size: 24px;color: $tertiary;
                     margin-left: 0;}
             }
+            &:hover {color: $tertiary;}
         }
     }
 	#nav{padding: 20px 10px;display:flex;flex-wrap:wrap;max-width:1350px;justify-content:space-between;margin:auto;align-items:center;

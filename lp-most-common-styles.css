@@ -499,6 +499,10 @@ footer {
   font-weight: 900;
 }
 
+#fixed-tabs .ra {
+  flex: 2;
+}
+
 #fixed-tabs .ra, #fixed-tabs .map {
   background-color: #92B551;
 }
@@ -604,7 +608,7 @@ header .address {
   letter-spacing: 0.55px;
 }
 header .address:hover {
-  color: #F6F4F2;
+  color: #43BBBF;
 }
 header .address i:before {
   color: #43BBBF;
@@ -625,6 +629,9 @@ header #header-details .pho i:before {
   font-size: 24px;
   color: #43BBBF;
   margin-left: 0;
+}
+header #header-details .pho:hover {
+  color: #43BBBF;
 }
 header #nav {
   padding: 20px 10px;
@@ -2003,4 +2010,4 @@ footer figure {
   footer .split article p big {
     font-size: 32px;
   }
-}/*# sourceMappingURL=lp-er-styles.css.map */
+}/*# sourceMappingURL=lp-most-common-styles.css.map */
