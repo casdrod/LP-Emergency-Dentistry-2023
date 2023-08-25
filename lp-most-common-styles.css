@@ -481,6 +481,8 @@ footer {
 
 #fixed-tabs i {
   font-size: 16px;
+  margin-bottom: -5px;
+  color: #000;
 }
 
 #fixed-tabs i, #fixed-tabs i:before {
@@ -489,10 +491,10 @@ footer {
 
 #fixed-tabs em {
   font-size: 14px;
-  margin-top: 4px;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
+  color: #000;
 }
 
 #fixed-tabs strong {
@@ -504,16 +506,16 @@ footer {
 }
 
 #fixed-tabs .ra, #fixed-tabs .map {
-  background-color: #92B551;
+  background-color: #D7B16A;
+}
+
+#fixed-tabs .call em, #fixed-tabs .call i {
+  color: #fff;
 }
 
 #fixed-tabs .call {
-  background-color: #F6F4F2;
-  color: #000000;
-}
-
-#fixed-tabs .ra em {
-  margin-top: 6px;
+  background-color: #2E2D2B;
+  color: #000;
 }
 
 @media (max-width: 1000px) {
@@ -546,13 +548,13 @@ footer {
 body {
   position: relative;
   background-color: #fff;
-  font-family: "Gotham";
+  font-family: "Inter", sans-serif;
   text-align: center;
 }
 
 p {
-  font: 400 20px/30px "Gotham";
-  color: #000000;
+  font: 400 20px/30px "Inter", sans-serif;
+  color: #000;
 }
 
 a {
@@ -562,17 +564,17 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Gotham";
+  font-family: "Inter", sans-serif;
 }
 
 h2 {
-  color: #000000;
+  color: #000;
   text-align: center;
-  font-size: 45px;
-  font-family: "Gotham";
+  font-size: 60px;
+  font-family: "Inter", sans-serif;
   line-height: 52px;
   letter-spacing: -1px;
-  font-weight: 700;
+  font-weight: 200;
   line-height: 1.2;
 }
 
@@ -591,94 +593,60 @@ h3 {
 /* header */
 header {
   position: relative;
-  padding: 0;
-  z-index: 100;
-  background-color: #fff;
+  padding: 5px 10px;
+  background-color: #2E2D2B;
 }
-header address {
-  padding: 0 8px;
+header .flex-ed {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header .btn-alt {
+  margin: 0;
+  color: #000;
+  border-radius: 10px;
+  max-width: 250px;
+  min-width: auto;
+}
+header .btn-alt span {
+  display: block;
+  font-size: 39px;
+}
+header .btn-alt:hover {
+  background-color: #95AD95;
+  border-color: #95AD95;
 }
 header .address {
-  text-align: left;
-  display: flex;
-  color: #000;
-  font-size: 22px;
-  line-height: 1.25;
-  font-weight: 400;
-  letter-spacing: 0.55px;
+  color: #fff;
 }
 header .address:hover {
-  color: #43BBBF;
+  color: #D7B16A;
 }
-header .address i:before {
-  color: #43BBBF;
-  font-size: 22px;
-  margin-left: -10px;
-  margin-right: 10px;
-  margin-top: 5px;
+header .phone {
+  font-size: 33px;
 }
-header #header-details .pho {
-  margin-bottom: 10px;
-  display: flex;
-  color: #000;
-  font-weight: 700;
-  font-size: 42px;
-  align-items: center;
+header .phone:hover {
+  color: #95AD95;
 }
-header #header-details .pho i:before {
-  font-size: 24px;
-  color: #43BBBF;
-  margin-left: 0;
+header .phone span {
+  display: block;
+  color: #fff;
+  font-size: 18px;
 }
-header #header-details .pho:hover {
-  color: #43BBBF;
-}
-header #nav {
-  padding: 20px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1350px;
-  justify-content: space-between;
-  margin: auto;
-  align-items: center;
-}
-header #nav .btn {
-  text-transform: none;
-  border: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  font-size: 30px;
-  background-color: #43BBBF;
-  max-width: 288px;
-  display: flex;
-  color: #000;
-  font-family: "Gotham";
-  font-weight: 700;
-  border-radius: 10px;
-  transform: 0.3s all ease;
-}
-header #nav .btn i:before {
-  margin-right: 10px;
-}
-header #nav .btn span {
-  display: contents;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-header #nav .btn:hover {
-  background-color: #92B551;
-}
-header #nav #mobile-btns {
+header #mobile-btns {
   width: 100%;
   display: flex;
 }
-header #nav #mobile-btns > * {
+header #mobile-btns > * {
   flex: 1;
   height: 64px;
 }
-header #nav #mobile-btns .btn {
+header #mobile-btns .btn {
   display: flex;
   min-width: auto;
   flex-wrap: wrap;
@@ -686,47 +654,50 @@ header #nav #mobile-btns .btn {
   justify-content: center;
   border-radius: 0;
   font-size: 16px;
+  margin: 0;
   text-transform: uppercase;
-  background-color: #F6F4F2;
+  background-color: #D7B16A;
+  color: #000;
 }
-header #nav #mobile-btns .btn span {
+header #mobile-btns .btn span {
   width: 100%;
   font-size: 28px;
   display: block;
 }
-header #nav #mobile-btns .phone, header #nav #mobile-btns .btn {
+header #mobile-btns .phone, header #mobile-btns .btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
-header #nav #mobile-btns .phone span, header #nav #mobile-btns .btn span {
+header #mobile-btns .phone span, header #mobile-btns .btn span {
   width: 100%;
 }
-header #nav #mobile-btns .phone {
-  background-color: #43BBBF;
+header #mobile-btns .phone {
+  background-color: #BDAA8C;
   color: #000;
   font-size: 20px;
   line-height: 1.3;
 }
-header #nav #mobile-btns .phone span {
+header #mobile-btns .phone span {
   text-transform: uppercase;
+  color: #000;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
 }
-header #nav #mobile-btns #mobile-special .container {
+header #mobile-btns #mobile-special .container {
   margin: 10px 0;
   border-top: 2px solid #AFB1B1;
   border-bottom: 2px solid #AFB1B1;
   padding: 5px;
 }
-header #nav #mobile-btns #mobile-special .container h4 {
-  color: #43BBBF;
+header #mobile-btns #mobile-special .container h4 {
+  color: #95AD95;
   font-size: 22px;
   margin: 0;
 }
-header #nav #mobile-btns #mobile-special .container small {
+header #mobile-btns #mobile-special .container small {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.7px;
@@ -734,7 +705,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 .address {
-  color: #000000;
+  color: #000;
   font-size: 20px;
   line-height: 1.25;
   font-weight: 400;
@@ -743,18 +714,18 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 .phone {
-  color: #92B551;
+  color: #D7B16A;
   font-size: 35px;
   line-height: 1.1;
   font-weight: 700;
 }
 .phone:hover {
-  color: #000000;
+  color: #000;
 }
 
 .phone-call p {
   margin: auto;
-  font-family: "Gotham";
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   letter-spacing: 1.4px;
   font-weight: 700;
@@ -762,7 +733,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 .address:hover {
-  color: #43BBBF;
+  color: #95AD95;
 }
 
 .fix-nav header {
@@ -787,7 +758,7 @@ header #nav #mobile-btns #mobile-special .container small {
 
 .btn, .btn-alt {
   transition: 0.3s all ease;
-  border: 1px solid #92B551;
+  border: 1px solid #D7B16A;
   min-width: 300px;
   cursor: pointer;
   position: relative;
@@ -795,15 +766,15 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 3px auto;
   padding: 15px 25px;
   color: #fff;
-  font: 700 16px/1 "Gotham";
+  font: 700 16px/1 "Inter", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: border 0.3s;
-  background-color: #92B551;
+  background-color: #D7B16A;
   border-radius: 50px;
 }
 .btn:hover, .btn:hover, .btn-alt:hover, .btn-alt:hover {
-  background-color: #F6F4F2;
+  background-color: #2E2D2B;
   color: #000;
 }
 
@@ -823,8 +794,9 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 .split h2 {
   text-align: left;
-  font-weight: 700;
+  font-weight: 200;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .split figure {
   flex: 0 1 45%;
@@ -841,10 +813,10 @@ header #nav #mobile-btns #mobile-special .container small {
 .safe-bar {
   width: 100%;
   position: relative;
-  background-color: #002572;
+  background-color: #95AD95;
   z-index: 10;
-  color: #FFF;
-  font: 700 24px/1.2 "Gotham";
+  color: #000;
+  font: 400 24px/1.2 "Inter", sans-serif;
   padding: 9px 10px;
   text-align: center;
 }
@@ -853,7 +825,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 #banner {
-  border-bottom: 10px solid #43BBBF;
+  border-bottom: 10px solid #95AD95;
   background-color: #F6F4F2;
   display: flex;
   flex-flow: row wrap;
@@ -867,6 +839,17 @@ header #nav #mobile-btns #mobile-special .container small {
   position: relative;
   order: 1;
   text-align: center;
+}
+#banner figure figcaption {
+  position: absolute;
+  letter-spacing: 1.5px;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
 }
 #banner figure img {
   width: 100%;
@@ -883,18 +866,18 @@ header #nav #mobile-btns #mobile-special .container small {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
   text-transform: uppercase;
-  color: #000000;
-  font-family: "Gotham";
+  color: #000;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
   left: 50%;
   transform: translateX(-50%);
 }
 #banner figure .caption a {
-  color: #000000;
+  color: #000;
   letter-spacing: 1.6px;
 }
 #banner figure .caption a:hover {
-  color: #92B551;
+  color: #D7B16A;
 }
 #banner .flex-ed {
   display: flex;
@@ -903,7 +886,7 @@ header #nav #mobile-btns #mobile-special .container small {
   order: 2;
   align-self: center;
   position: relative;
-  flex: 0 1 45%;
+  flex: 0 1 50%;
   z-index: 2;
 }
 #banner article #stamps {
@@ -915,22 +898,22 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 10px 20px;
 }
 #banner article h1 {
-  font-size: 40px;
-  font-family: "Gotham";
-  color: #121212;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  color: #000;
   font-weight: 400;
   line-height: 1;
   margin-top: 50px;
 }
-#banner article h1 strong {
+#banner article h1 span {
   letter-spacing: normal;
   text-transform: none;
   display: block;
-  font-weight: 700;
-  font-size: 80px;
+  font-weight: 200;
+  font-size: 70px;
   line-height: 1;
   letter-spacing: 2.5px;
-  font-family: "Gotham";
+  font-family: "Inter", sans-serif;
 }
 
 #common {
@@ -940,6 +923,11 @@ header #nav #mobile-btns #mobile-special .container small {
   max-width: 1100px;
   text-align: center;
   margin: 20px auto;
+}
+#common article h2 {
+  font-size: 60px;
+  font-weight: 200;
+  margin: 40px auto;
 }
 #common .flex-ed {
   max-width: 980px;
@@ -970,7 +958,7 @@ header #nav #mobile-btns #mobile-special .container small {
 #common .flex-ed div figure:before, #common .flex-ed div figure:after {
   position: absolute;
   content: "";
-  background: #43BBBF;
+  background: #D7B16A;
   width: 200px;
   height: 150px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
@@ -986,17 +974,17 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 #common .btn {
   min-width: 440px;
-  background-color: #43BBBF;
+  background-color: #95AD95;
   border: none;
   color: #000;
   font-size: 20px;
 }
 #common .btn:hover {
-  background-color: #92B551;
+  background-color: #D7B16A;
 }
 
 #same-day .btn {
-  background-color: #43BBBF;
+  background-color: #D7B16A;
   color: #000;
   border: none;
   font-size: 20px;
@@ -1005,7 +993,7 @@ header #nav #mobile-btns #mobile-special .container small {
   text-align: center;
 }
 #same-day .btn:hover {
-  background-color: #92B551;
+  background-color: #95AD95;
 }
 
 /* ------------- Controls -------------- */
@@ -1019,7 +1007,7 @@ header #nav #mobile-btns #mobile-special .container small {
 
 /* ------------- Arrows -------------- */
 .slick-arrow {
-  color: #43BBBF;
+  color: #95AD95;
   background-color: transparent;
   font-family: fontello;
   font-size: 50px;
@@ -1041,7 +1029,7 @@ header #nav #mobile-btns #mobile-special .container small {
   margin-left: -4px;
 }
 .slick-arrow:hover {
-  color: #F6F4F2;
+  color: #2E2D2B;
 }
 
 #next {
@@ -1075,7 +1063,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 .slick-dots .slick-active span {
   opacity: 1;
-  background-color: #92B551;
+  background-color: #D7B16A;
 }
 
 .slick-dots li button {
@@ -1131,17 +1119,17 @@ header #nav #mobile-btns #mobile-special .container small {
   max-width: 90%;
 }
 #smiles .arrow {
-  color: #92B551;
+  color: #D7B16A;
 }
 #smiles .arrow:hover {
-  color: #F6F4F2;
+  color: #2E2D2B;
 }
 #smiles .btn {
   min-width: 350px;
 }
 
 .bkgrd {
-  background-color: #F6F4F2;
+  background-color: #EFEEE7;
 }
 
 #reviews {
@@ -1155,6 +1143,11 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 #reviews .btn {
   margin: 40px auto;
+  color: #000;
+}
+#reviews .btn:hover {
+  background-color: #95AD95;
+  color: #fff;
 }
 
 #rotate {
@@ -1176,21 +1169,21 @@ header #nav #mobile-btns #mobile-special .container small {
   flex: 0 1 380px;
 }
 #rotate .review:nth-of-type(2) p {
-  font-size: 21px;
+  font-size: 26px;
   line-height: 25px;
 }
 #rotate .review > div {
   height: 100%;
   min-height: 560px;
   margin: auto;
-  border: 2px solid #96CEB4;
+  border: 2px solid #2E2D2B;
   border-radius: 10px;
   padding: 60px 15px;
 }
 #rotate .review:after {
   display: block;
   position: absolute;
-  border: 2px solid #43BBBF;
+  border: 2px solid #95AD95;
   width: 200px;
   height: 300px;
   border-radius: 10px;
@@ -1215,8 +1208,8 @@ header #nav #mobile-btns #mobile-special .container small {
   display: inline;
 }
 #rotate p {
-  color: #000000;
-  font: 400 27px/30px "Gotham";
+  color: #000;
+  font: 400 27px/30px "Inter", sans-serif;
   text-align: center;
   max-width: 95%;
   margin: 10px auto;
@@ -1228,8 +1221,8 @@ header #nav #mobile-btns #mobile-special .container small {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: #000000;
-  font-family: "Gotham";
+  color: #000;
+  font-family: "Inter", sans-serif;
   letter-spacing: 1.8px;
   font-weight: 600;
   margin-top: 10px;
@@ -1242,7 +1235,7 @@ header #nav #mobile-btns #mobile-special .container small {
 
 footer {
   overflow: hidden;
-  padding: 40px 0 0;
+  padding: 70px 0 0;
 }
 footer .phy {
   color: #fff;
@@ -1257,17 +1250,17 @@ footer .phy:before {
   top: 8px;
   font-family: fontello;
   content: "\e948";
-  color: #43BBBF;
+  color: #D7B16A;
   font-size: 24px;
 }
 footer .phy:hover {
-  color: #92B551;
+  color: #D7B16A;
 }
 footer .pho {
   color: #fff;
   display: block;
   position: relative;
-  font: 600 40px/1.1 "Gotham";
+  font: 600 40px/1.1 "Inter", sans-serif;
   margin: 35px 0 20px;
   padding-left: 40px;
 }
@@ -1277,11 +1270,11 @@ footer .pho:before {
   top: 3px;
   font-family: fontello;
   content: "\e80b";
-  color: #43BBBF;
+  color: #D7B16A;
   font-size: 30px;
 }
 footer .pho:hover {
-  color: #92B551;
+  color: #D7B16A;
 }
 footer .split {
   justify-content: space-between;
@@ -1293,22 +1286,23 @@ footer .split {
 }
 footer .split article {
   flex: 0 1 500px;
-  background-color: #002572;
+  background-color: #2E2D2B;
   padding: 85px 60px;
   margin: 0;
   align-self: center;
   border-radius: 8px;
 }
 footer .split article h2 {
-  font: 700 50px/1 "Gotham";
+  font: 200 73px/1 "Inter", sans-serif;
   color: #fff;
   margin: 0 auto 30px;
+  text-transform: none;
 }
 footer .split article .btn {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  background-color: #43BBBF;
+  background-color: #95AD95;
   color: #000;
 }
 footer .split figure p {
@@ -1333,7 +1327,7 @@ footer figure {
   top: 25px;
   font-family: fontello;
   content: "\e839";
-  color: #43BBBF;
+  color: #D7B16A;
   font-size: 30px;
 }
 
@@ -1347,7 +1341,7 @@ footer figure {
   font-size: 18px;
   color: #fff;
   line-height: 34px;
-  font-family: "Gotham";
+  font-family: "Inter", sans-serif;
 }
 .hours p span {
   text-transform: uppercase;
@@ -1377,14 +1371,14 @@ footer figure {
 }
 .insurance article h2 {
   margin-bottom: 15px;
-  font-family: "Gotham";
-  font-size: 50px;
-  text-transform: none;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
 }
 .insurance article h2 small {
   display: block;
   text-transform: none;
-  color: #000000;
+  color: #000;
   font-size: 30px;
   font-weight: 400;
 }
@@ -1412,15 +1406,15 @@ footer figure {
 .copy {
   margin-top: 20px;
   padding: 40px 10px;
-  background-color: #002572;
+  background-color: #2E2D2B;
   margin: auto;
   text-transform: uppercase;
-  font: 500 16px/1.4 "Gotham";
+  font: 500 16px/1.4 "Inter", sans-serif;
   color: #fff;
 }
 .copy a, .copy p {
-  font: 500 16px/1.4 "Gotham";
-  color: #43BBBF;
+  font: 500 16px/1.4 "Inter", sans-serif;
+  color: #D7B16A;
 }
 .copy p {
   margin: 20px auto;
@@ -1428,7 +1422,7 @@ footer figure {
   letter-spacing: 0.2em;
 }
 .copy a:hover {
-  color: #F6F4F2;
+  color: #95AD95;
   text-decoration: none;
 }
 .copy span {
@@ -1436,11 +1430,11 @@ footer figure {
 }
 
 ::-moz-placeholder {
-  color: #000000;
+  color: #000;
 }
 
 ::placeholder {
-  color: #000000;
+  color: #000;
 }
 
 #lp-appointment-form {
@@ -1454,7 +1448,7 @@ footer figure {
   font-size: 50px;
   font-weight: 700;
   margin: 10px auto 40px;
-  color: #000000;
+  color: #000;
 }
 #lp-appointment-form > p {
   max-width: 700px;
@@ -1474,7 +1468,7 @@ footer figure {
   display: table;
   margin: 10px auto;
   background-color: #d3d3d3;
-  color: #000000;
+  color: #000;
   border-radius: 5px;
   padding: 15px;
   font-size: 16px;
@@ -1491,7 +1485,7 @@ footer figure {
 #lp-appointment-form textarea:focus, #lp-appointment-form input:focus, #lp-appointment-form button:focus {
   outline-style: solid;
   outline-width: thin;
-  outline-color: #F6F4F2;
+  outline-color: #2E2D2B;
 }
 #lp-appointment-form .submitBtn {
   text-align: center;
@@ -1614,6 +1608,7 @@ footer figure {
   }
   .insurance #insurance-list span {
     margin: 20px auto;
+    width: 100%;
   }
   #reviews {
     padding: 50px 15px 10px;
@@ -1624,19 +1619,8 @@ footer figure {
   #patients {
     display: block;
   }
-  :is(#common, #same-day) h2 {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  :is(#common, #same-day) h2:after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    margin: 25px 100px 10px;
+  #common article h2, .insurance article h2 {
+    font-size: 50px;
   }
   footer h2 {
     font-size: 50px;
@@ -1661,13 +1645,16 @@ footer figure {
   #banner article {
     padding: 20px 10px 50px;
     flex: 0 100%;
-    order: 1;
+    order: -1;
     margin-left: auto;
     background-color: #F6F4F2;
   }
+  #banner article h1 span {
+    font-size: 56px;
+  }
   #banner {
     background-image: none;
-    background-color: #F6F4F2;
+    background-color: #2E2D2B;
     flex-wrap: wrap;
   }
   #banner figure figcaption {
@@ -1710,12 +1697,9 @@ footer figure {
   header .btn-alt, header address {
     flex: 0 1 50%;
   }
-  header address {
-    display: none;
-  }
   header .logo {
     width: 100%;
-    margin: 10px;
+    margin: 25px;
     max-width: none;
   }
   header .btn-alt {
@@ -1735,7 +1719,7 @@ footer figure {
   header .btn-alt:after {
     display: none;
   }
-  header .flex-ed > a {
+  header .flex-ed > a:not(:first-of-type) {
     display: none;
   }
   header .phone {
@@ -1765,6 +1749,9 @@ footer figure {
     display: block;
     font-size: 0;
   }
+  #banner {
+    border-color: #2E2D2B;
+  }
   #banner .container {
     flex-wrap: wrap;
   }
@@ -1779,7 +1766,7 @@ footer figure {
     left: auto;
     right: auto;
     margin: auto;
-    bottom: 20px;
+    bottom: 0;
   }
   #banner .extract {
     font-size: 22px;
@@ -1853,7 +1840,7 @@ footer figure {
     display: block;
   }
   footer .split .footer-maps > div h3, footer .split .footer-maps > div address a {
-    color: #000000;
+    color: #000;
   }
   footer .split .footer-maps > div iframe {
     display: none;
@@ -1917,7 +1904,7 @@ footer figure {
     margin-top: 0;
   }
   .copy {
-    padding: 30px 10px 20px;
+    padding: 30px 10px 70px;
   }
   #banner h1 strong {
     font-size: 75px;
@@ -1935,6 +1922,7 @@ footer figure {
   }
   footer .split article .pho {
     font-size: 36px;
+    text-align: left;
   }
   footer .hours label {
     width: 120px;
@@ -1942,10 +1930,13 @@ footer figure {
   footer .hours:before {
     top: 10px;
   }
+  .hours p {
+    text-align: left;
+  }
 }
 @media (max-width: 480px) {
   h2 {
-    font-size: 36px;
+    font-size: 50px;
   }
   #practice .container {
     padding: 0;
