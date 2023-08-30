@@ -372,7 +372,9 @@ footer{overflow:hidden; padding:70px 0 0;
     }
     textarea{height:200px;margin-bottom:30px}
     textarea:focus, input:focus, button:focus{outline-style:solid;outline-width:thin;outline-color:$secondary}
-    .submitBtn{text-align:center;width:200px;margin:auto;display:table}
+    .submitBtn{text-align:center;width:200px;margin:auto;display:table;font-size: 20px;color: #000;
+        &:hover {color: #fff;}
+    }
 }
 
 @media (max-width: 1430px) {

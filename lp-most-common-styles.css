@@ -1492,6 +1492,11 @@ footer figure {
   width: 200px;
   margin: auto;
   display: table;
+  font-size: 20px;
+  color: #000;
+}
+#lp-appointment-form .submitBtn:hover {
+  color: #fff;
 }
 
 @media (max-width: 1430px) {
