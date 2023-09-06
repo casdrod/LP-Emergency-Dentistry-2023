@@ -506,7 +506,7 @@ footer {
 }
 
 #fixed-tabs .ra, #fixed-tabs .map {
-  background-color: #D7B16A;
+  background-color: #F2C845;
 }
 
 #fixed-tabs .call em, #fixed-tabs .call i {
@@ -548,12 +548,12 @@ footer {
 body {
   position: relative;
   background-color: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: "Chivo", sans-serif;
   text-align: center;
 }
 
 p {
-  font: 400 20px/30px "Inter", sans-serif;
+  font: 400 20px/30px "Chivo", sans-serif;
   color: #000;
 }
 
@@ -564,14 +564,14 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Chivo", sans-serif;
 }
 
 h2 {
-  color: #000;
+  color: #00375D;
   text-align: center;
   font-size: 60px;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   line-height: 52px;
   letter-spacing: -1px;
   font-weight: 200;
@@ -593,62 +593,103 @@ h3 {
 /* header */
 header {
   position: relative;
-  padding: 5px 10px;
-  background-color: #2E2D2B;
+  padding: 0;
+  z-index: 100;
+  background-color: #fff;
 }
-header .flex-ed {
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  max-width: 1200px;
-  margin: auto;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-header .btn-alt {
-  margin: 0;
-  color: #000;
-  border-radius: 10px;
-  max-width: 250px;
-  min-width: auto;
-}
-header .btn-alt span {
-  display: block;
-  font-size: 39px;
-}
-header .btn-alt:hover {
-  background-color: #95AD95;
-  border-color: #95AD95;
+header address {
+  padding: 0 8px;
 }
 header .address {
-  color: #fff;
+  text-align: left;
+  display: flex;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 300;
+  letter-spacing: 0.55px;
 }
 header .address:hover {
-  color: #D7B16A;
+  color: #F2C845;
 }
-header .phone {
-  font-size: 33px;
+header .address i:before {
+  color: #F2C845;
+  font-size: 22px;
+  margin-left: -10px;
+  margin-right: 15px;
 }
-header .phone:hover {
-  color: #95AD95;
+header #nav {
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
 }
-header .phone span {
+header #nav .btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 15px 25px;
+  font-size: 20px;
+  background-color: #F2C845;
+  max-width: 470px;
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  border-radius: 20px;
+}
+header #nav .btn i:before {
+  margin-right: 10px;
+}
+header #nav .btn span {
   display: block;
-  color: #fff;
-  font-size: 18px;
+  width: 100%;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-header #mobile-btns {
+header #nav .btn:hover {
+  background-color: #2E2D2B;
+  color: #fff;
+}
+header #nav #header-details .pho {
+  display: flex;
+  font-size: 41px;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+header #nav #header-details .pho i:before {
+  color: #F2C845;
+  margin-right: 10px;
+  margin-left: 0;
+}
+header #nav #header-details .pho:hover {
+  color: #F2C845;
+}
+header #nav #header-details a i:before {
+  font-size: 22px;
+}
+header #nav #header-details, header #nav #header-btn {
+  flex: 1;
+}
+header #nav #header-btn a {
+  max-width: 390px;
+  margin: auto;
+}
+header #nav #mobile-btns {
   width: 100%;
   display: flex;
 }
-header #mobile-btns > * {
+header #nav #mobile-btns > * {
   flex: 1;
-  height: 64px;
 }
-header #mobile-btns .btn {
+header #nav #mobile-btns .btn {
   display: flex;
-  min-width: auto;
   flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
@@ -656,48 +697,46 @@ header #mobile-btns .btn {
   font-size: 16px;
   margin: 0;
   text-transform: uppercase;
-  background-color: #D7B16A;
-  color: #000;
+  background-color: #F2C845;
 }
-header #mobile-btns .btn span {
+header #nav #mobile-btns .btn span {
   width: 100%;
   font-size: 28px;
-  display: block;
 }
-header #mobile-btns .phone, header #mobile-btns .btn {
+header #nav #mobile-btns .phone, header #nav #mobile-btns .btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
-header #mobile-btns .phone span, header #mobile-btns .btn span {
+header #nav #mobile-btns .phone span, header #nav #mobile-btns .btn span {
   width: 100%;
 }
-header #mobile-btns .phone {
-  background-color: #BDAA8C;
+header #nav #mobile-btns .phone {
+  background-color: #EBEBEB;
   color: #000;
   font-size: 20px;
   line-height: 1.3;
 }
-header #mobile-btns .phone span {
+header #nav #mobile-btns .phone span {
   text-transform: uppercase;
-  color: #000;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #000;
 }
-header #mobile-btns #mobile-special .container {
+header #nav #mobile-btns #mobile-special .container {
   margin: 10px 0;
   border-top: 2px solid #AFB1B1;
   border-bottom: 2px solid #AFB1B1;
   padding: 5px;
 }
-header #mobile-btns #mobile-special .container h4 {
-  color: #95AD95;
+header #nav #mobile-btns #mobile-special .container h4 {
+  color: #00375D;
   font-size: 22px;
   margin: 0;
 }
-header #mobile-btns #mobile-special .container small {
+header #nav #mobile-btns #mobile-special .container small {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.7px;
@@ -714,7 +753,7 @@ header #mobile-btns #mobile-special .container small {
 }
 
 .phone {
-  color: #D7B16A;
+  color: #F2C845;
   font-size: 35px;
   line-height: 1.1;
   font-weight: 700;
@@ -725,7 +764,7 @@ header #mobile-btns #mobile-special .container small {
 
 .phone-call p {
   margin: auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Chivo", sans-serif;
   font-size: 14px;
   letter-spacing: 1.4px;
   font-weight: 700;
@@ -733,7 +772,7 @@ header #mobile-btns #mobile-special .container small {
 }
 
 .address:hover {
-  color: #95AD95;
+  color: #00375D;
 }
 
 .fix-nav header {
@@ -758,7 +797,7 @@ header #mobile-btns #mobile-special .container small {
 
 .btn, .btn-alt {
   transition: 0.3s all ease;
-  border: 1px solid #D7B16A;
+  border: 1px solid #F2C845;
   min-width: 300px;
   cursor: pointer;
   position: relative;
@@ -766,11 +805,11 @@ header #mobile-btns #mobile-special .container small {
   margin: 3px auto;
   padding: 15px 25px;
   color: #fff;
-  font: 700 16px/1 "Inter", sans-serif;
+  font: 700 16px/1 "Chivo", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: border 0.3s;
-  background-color: #D7B16A;
+  background-color: #F2C845;
   border-radius: 50px;
 }
 .btn:hover, .btn:hover, .btn-alt:hover, .btn-alt:hover {
@@ -796,7 +835,6 @@ header #mobile-btns #mobile-special .container small {
   text-align: left;
   font-weight: 200;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 .split figure {
   flex: 0 1 45%;
@@ -813,10 +851,10 @@ header #mobile-btns #mobile-special .container small {
 .safe-bar {
   width: 100%;
   position: relative;
-  background-color: #95AD95;
+  background-color: #00375D;
   z-index: 10;
-  color: #000;
-  font: 400 24px/1.2 "Inter", sans-serif;
+  color: #fff;
+  font: 400 24px/1.2 "Chivo", sans-serif;
   padding: 9px 10px;
   text-align: center;
 }
@@ -825,7 +863,7 @@ header #mobile-btns #mobile-special .container small {
 }
 
 #banner {
-  border-bottom: 10px solid #95AD95;
+  border-bottom: 5px solid #F2C845;
   background-color: #F6F4F2;
   display: flex;
   flex-flow: row wrap;
@@ -867,7 +905,7 @@ header #mobile-btns #mobile-special .container small {
   padding: 10px;
   text-transform: uppercase;
   color: #000;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   text-transform: uppercase;
   left: 50%;
   transform: translateX(-50%);
@@ -877,7 +915,7 @@ header #mobile-btns #mobile-special .container small {
   letter-spacing: 1.6px;
 }
 #banner figure .caption a:hover {
-  color: #D7B16A;
+  color: #F2C845;
 }
 #banner .flex-ed {
   display: flex;
@@ -886,7 +924,7 @@ header #mobile-btns #mobile-special .container small {
   order: 2;
   align-self: center;
   position: relative;
-  flex: 0 1 50%;
+  flex: 0 1 49%;
   z-index: 2;
 }
 #banner article #stamps {
@@ -898,22 +936,25 @@ header #mobile-btns #mobile-special .container small {
   margin: 10px 20px;
 }
 #banner article h1 {
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-family: "Chivo", sans-serif;
   color: #000;
+  letter-spacing: 4px;
   font-weight: 400;
   line-height: 1;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 #banner article h1 span {
   letter-spacing: normal;
   text-transform: none;
   display: block;
-  font-weight: 200;
+  font-weight: 800;
   font-size: 70px;
   line-height: 1;
   letter-spacing: 2.5px;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 #common {
@@ -958,7 +999,7 @@ header #mobile-btns #mobile-special .container small {
 #common .flex-ed div figure:before, #common .flex-ed div figure:after {
   position: absolute;
   content: "";
-  background: #D7B16A;
+  background: #00375D;
   width: 200px;
   height: 150px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
@@ -974,17 +1015,17 @@ header #mobile-btns #mobile-special .container small {
 }
 #common .btn {
   min-width: 440px;
-  background-color: #95AD95;
+  background-color: #00375D;
   border: none;
   color: #000;
   font-size: 20px;
 }
 #common .btn:hover {
-  background-color: #D7B16A;
+  background-color: #F2C845;
 }
 
 #same-day .btn {
-  background-color: #D7B16A;
+  background-color: #F2C845;
   color: #000;
   border: none;
   font-size: 20px;
@@ -993,7 +1034,7 @@ header #mobile-btns #mobile-special .container small {
   text-align: center;
 }
 #same-day .btn:hover {
-  background-color: #95AD95;
+  background-color: #00375D;
 }
 
 /* ------------- Controls -------------- */
@@ -1007,7 +1048,7 @@ header #mobile-btns #mobile-special .container small {
 
 /* ------------- Arrows -------------- */
 .slick-arrow {
-  color: #95AD95;
+  color: #00375D;
   background-color: transparent;
   font-family: fontello;
   font-size: 50px;
@@ -1063,7 +1104,7 @@ header #mobile-btns #mobile-special .container small {
 }
 .slick-dots .slick-active span {
   opacity: 1;
-  background-color: #D7B16A;
+  background-color: #F2C845;
 }
 
 .slick-dots li button {
@@ -1119,7 +1160,7 @@ header #mobile-btns #mobile-special .container small {
   max-width: 90%;
 }
 #smiles .arrow {
-  color: #D7B16A;
+  color: #F2C845;
 }
 #smiles .arrow:hover {
   color: #2E2D2B;
@@ -1129,24 +1170,26 @@ header #mobile-btns #mobile-special .container small {
 }
 
 .bkgrd {
-  background-color: #EFEEE7;
+  background-color: #EBEBEB;
 }
 
 #reviews {
   position: relative;
-  padding: 50px 10px 70px;
+  padding: 40px 10px;
   text-align: center;
   z-index: 101;
+  background: #00375D;
 }
 #reviews h2 {
   text-align: center;
+  color: #fff;
 }
 #reviews .btn {
   margin: 40px auto;
   color: #000;
 }
 #reviews .btn:hover {
-  background-color: #95AD95;
+  background-color: #00375D;
   color: #fff;
 }
 
@@ -1170,7 +1213,7 @@ header #mobile-btns #mobile-special .container small {
 }
 #rotate .review:nth-of-type(2) p {
   font-size: 26px;
-  line-height: 25px;
+  line-height: 27px;
 }
 #rotate .review > div {
   height: 100%;
@@ -1178,12 +1221,18 @@ header #mobile-btns #mobile-special .container small {
   margin: auto;
   border: 2px solid #2E2D2B;
   border-radius: 10px;
-  padding: 60px 15px;
+  padding: 60px 15px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#rotate .review > div .author-section {
+  align-self: flex-end;
 }
 #rotate .review:after {
   display: block;
   position: absolute;
-  border: 2px solid #95AD95;
+  border: 2px solid #00375D;
   width: 200px;
   height: 300px;
   border-radius: 10px;
@@ -1209,7 +1258,7 @@ header #mobile-btns #mobile-special .container small {
 }
 #rotate p {
   color: #000;
-  font: 400 27px/30px "Inter", sans-serif;
+  font: 400 26px/27px "Chivo", sans-serif;
   text-align: center;
   max-width: 95%;
   margin: 10px auto;
@@ -1222,7 +1271,7 @@ header #mobile-btns #mobile-special .container small {
   justify-content: center;
   align-items: center;
   color: #000;
-  font-family: "Inter", sans-serif;
+  font-family: "Chivo", sans-serif;
   letter-spacing: 1.8px;
   font-weight: 600;
   margin-top: 10px;
@@ -1249,18 +1298,18 @@ footer .phy:before {
   left: 0;
   top: 8px;
   font-family: fontello;
-  content: "\e948";
-  color: #D7B16A;
+  content: "\e809";
+  color: #F2C845;
   font-size: 24px;
 }
 footer .phy:hover {
-  color: #D7B16A;
+  color: #F2C845;
 }
 footer .pho {
   color: #fff;
   display: block;
   position: relative;
-  font: 600 40px/1.1 "Inter", sans-serif;
+  font: 600 40px/1.1 "Manrope", sans-serif;
   margin: 35px 0 20px;
   padding-left: 40px;
 }
@@ -1270,11 +1319,11 @@ footer .pho:before {
   top: 3px;
   font-family: fontello;
   content: "\e80b";
-  color: #D7B16A;
+  color: #F2C845;
   font-size: 30px;
 }
 footer .pho:hover {
-  color: #D7B16A;
+  color: #F2C845;
 }
 footer .split {
   justify-content: space-between;
@@ -1286,14 +1335,14 @@ footer .split {
 }
 footer .split article {
   flex: 0 1 500px;
-  background-color: #2E2D2B;
+  background-color: #00375D;
   padding: 85px 60px;
   margin: 0;
   align-self: center;
   border-radius: 8px;
 }
 footer .split article h2 {
-  font: 200 73px/1 "Inter", sans-serif;
+  font: 800 70px/1 "Manrope", sans-serif;
   color: #fff;
   margin: 0 auto 30px;
   text-transform: none;
@@ -1302,7 +1351,7 @@ footer .split article .btn {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  background-color: #95AD95;
+  background-color: #00375D;
   color: #000;
 }
 footer .split figure p {
@@ -1327,7 +1376,7 @@ footer figure {
   top: 25px;
   font-family: fontello;
   content: "\e839";
-  color: #D7B16A;
+  color: #F2C845;
   font-size: 30px;
 }
 
@@ -1341,7 +1390,7 @@ footer figure {
   font-size: 18px;
   color: #fff;
   line-height: 34px;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 .hours p span {
   text-transform: uppercase;
@@ -1371,23 +1420,27 @@ footer figure {
 }
 .insurance article h2 {
   margin-bottom: 15px;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 60px;
-  text-transform: uppercase;
+  color: #000;
 }
 .insurance article h2 small {
   display: block;
   text-transform: none;
+  font-family: "Chivo", sans-serif;
   color: #000;
   font-size: 30px;
   font-weight: 400;
 }
 .insurance article #insurance-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 25px auto;
   flex-wrap: wrap;
+}
+.insurance article #insurance-list span {
+  margin: 0 30px;
 }
 .insurance article > small {
   opacity: 0.4;
@@ -1406,15 +1459,15 @@ footer figure {
 .copy {
   margin-top: 20px;
   padding: 40px 10px;
-  background-color: #2E2D2B;
+  background-color: #000;
   margin: auto;
   text-transform: uppercase;
-  font: 500 16px/1.4 "Inter", sans-serif;
+  font: 500 16px/1.4 "Chivo", sans-serif;
   color: #fff;
 }
 .copy a, .copy p {
-  font: 500 16px/1.4 "Inter", sans-serif;
-  color: #D7B16A;
+  font: 500 16px/1.4 "Chivo", sans-serif;
+  color: #F2C845;
 }
 .copy p {
   margin: 20px auto;
@@ -1422,7 +1475,7 @@ footer figure {
   letter-spacing: 0.2em;
 }
 .copy a:hover {
-  color: #95AD95;
+  color: #00375D;
   text-decoration: none;
 }
 .copy span {

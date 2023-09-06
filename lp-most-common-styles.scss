@@ -32,11 +32,11 @@
 .slick-dots li:before { display:none; }
 
 
-$primary: #D7B16A;
+$primary: #F2C845;
 $secondary: #2E2D2B;
-$tertiary: #95AD95;
-$font: 'Inter', sans-serif;
-$font2: 'Inter', sans-serif;
+$tertiary: #00375D;
+$font: 'Manrope', sans-serif;
+$font2: 'Chivo', sans-serif;
 $text: #000;
 
 /* FIXED TABS */
@@ -63,64 +63,78 @@ body{position:relative;background-color:#fff;font-family: $font2; text-align:cen
 p{font:400 20px/30px $font2; color: $text;}
 a{display:inline-block;text-decoration:none;cursor:pointer}
 h1,h2,h3,h4,h5,h6{font-family: $font2;}
-h2{color:$text;text-align:center;font-size:60px; font-family: $font;line-height:52px;letter-spacing: -1px; font-weight: 200; line-height: 1.2;}
+h2{color:$tertiary;text-align:center;font-size:60px; font-family: $font;line-height:52px;letter-spacing: -1px; font-weight: 200; line-height: 1.2;}
 h3{font-size:32px;line-height:1.41}
 .subpage {max-width: 1200px; margin: 100px auto; text-align: center; padding: 15px;}
 
 /* header */
-header{position:relative;padding:5px 10px;background-color:$secondary;
-    .flex-ed{justify-content:space-between;align-items:center;flex-wrap:nowrap; max-width:1200px;margin:auto;width:100%;padding-top: 10px; padding-bottom:10px}
-    .btn-alt{margin:0;color: #000;border-radius: 10px;max-width: 250px;
-        min-width: auto;
-        span {display:block;font-size: 39px;}
-        &:hover {background-color: $tertiary;border-color: $tertiary;}
+header{position:relative;padding:0;z-index:100;background-color: #fff;
+    address{padding:0 8px;}
+    .address{text-align:left;display:flex;color: #000;font-size:18px;line-height:1.25;font-weight:300;letter-spacing:.55px;
+        &:hover{color:$primary}
+        i:before {color: $primary;font-size: 22px;margin-left: -10px;margin-right: 15px;}
     }
-    .address {color: #fff;
-        &:hover {color: $primary;}
-    }
-    .phone {font-size: 33px;
-        &:hover {color: $tertiary;}
-        span {display: block;color: #fff;font-size: 18px;}
-    }
-    #mobile-btns {
-        width: 100%;display:flex;
-        > * {flex: 1;height: 64px;}
-        .btn {
-            display: flex;
-            min-width: auto;
-            flex-wrap: wrap;
-            padding: 10px;
-            justify-content: center;
-            border-radius: 0;
-            font-size: 16px;
-            margin: 0;
-            text-transform: uppercase;
-            background-color: $primary;
-            color: #000;
-            span {
-                width: 100%;font-size: 28px;display: block;
-              }
-        }
-        .phone, .btn {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-            span {
-                width: 100%;
+	#nav{padding: 20px 10px;display:flex;flex-wrap:wrap;max-width:1350px;justify-content:space-between;margin:auto;align-items:center;
+		.btn{display: flex;flex-wrap: wrap;	justify-content: center;margin:0;padding: 15px 25px;font-size:20px;background-color: $primary;max-width: 470px;color: #000;font-family: $font;font-weight: 600;border-radius: 20px;
+			i:before {margin-right: 10px;}
+			span {display: block;width: 100%;font-size: 44px;text-transform: uppercase;font-weight: 600;}
+            &:hover {background-color: $secondary; color: #fff;}
+		}
+        #header-details {
+            .pho {display:flex;font-size: 41px;align-items:center;font-weight: 700;margin-bottom: 10px;color: $text;
+                i {
+                    &:before {color: $primary;margin-right: 10px;
+                        margin-left: 0;}
+                }
+                &:hover{color:$primary}
             }
-          }
-        .phone {background-color: #BDAA8C;color: #000;font-size: 20px;line-height: 1.3;
-            span {text-transform: uppercase;color: #000;font-size: 16px;font-weight: 700;letter-spacing: 1px;}
-        }
-        #mobile-special {
-            .container {
-                margin: 10px 0;border-top: 2px solid #AFB1B1;border-bottom: 2px solid #AFB1B1;padding: 5px;
-                h4 {color: $tertiary;font-size: 22px;margin: 0;}
-                small {text-transform: uppercase;font-size: 14px;letter-spacing: .7px;font-weight: 700;}
+            a {
+                i {
+                    &:before {font-size: 22px;}
+                }
             }
         }
-      }
+        #header-details, #header-btn {flex: 1;}
+        #header-btn a {max-width: 390px;
+            margin: auto;}
+		#mobile-btns {
+			width: 100%;display:flex;
+			> * {flex: 1;}
+			.btn {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 10px;
+				justify-content: center;
+				border-radius: 0;
+				font-size: 16px;
+                margin: 0;
+				text-transform: uppercase;
+                background-color: $primary;
+				span {
+					width: 100%;font-size: 28px;
+				  }
+			}
+			.phone, .btn {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: center;
+				span {
+					width: 100%;
+				}
+			  }
+			.phone {background-color: #EBEBEB;color: #000;font-size: 20px;line-height: 1.3;
+				span {text-transform: uppercase;font-size: 16px;font-weight: 700;letter-spacing: 1px;color: #000;}
+			}
+			#mobile-special {
+				.container {
+					margin: 10px 0;border-top: 2px solid #AFB1B1;border-bottom: 2px solid #AFB1B1;padding: 5px;
+					h4 {color: $tertiary;font-size: 22px;margin: 0;}
+					small {text-transform: uppercase;font-size: 14px;letter-spacing: .7px;font-weight: 700;}
+				}
+			}
+		  }
+	}	
 }
 
 .address{color:$text;font-size:20px;line-height:1.25;font-weight:400; text-align: center; letter-spacing: 0.42px;}
@@ -140,18 +154,18 @@ header{position:relative;padding:5px 10px;background-color:$secondary;
 
 .split{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width: 1200px; margin: auto; padding: 30px 10px 50px;
     article{margin:10px;flex:0 1 45%; text-align: left;}
-    h2 {text-align: left; font-weight: 200;margin-bottom: 10px;text-transform: uppercase;;}
+    h2 {text-align: left; font-weight: 200;margin-bottom: 10px;}
     figure {flex: 0 1 45%;}
     figure img{position:relative; max-width: 550px;}
     &.even figure{order:-1;margin-right:40px}
 }
 
 
-.safe-bar{width:100%;position:relative;background-color:$tertiary;z-index:10;color:#000;font:400 24px/1.2 $font2; padding:9px 10px;text-align:center; 
+.safe-bar{width:100%;position:relative;background-color:$tertiary;z-index:10;color:#fff;font:400 24px/1.2 $font2; padding:9px 10px;text-align:center; 
     span {margin: 0 40px;}
 }
 
-#banner {border-bottom: 10px solid $tertiary;background-color: #F6F4F2;
+#banner {border-bottom: 5px solid $primary;background-color: #F6F4F2;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -197,12 +211,12 @@ header{position:relative;padding:5px 10px;background-color:$secondary;
       }
     }
   .flex-ed {display:flex;}
-  article {order: 2;align-self: center;position: relative; flex: 0 1 50%; z-index: 2;
+  article {order: 2;align-self: center;position: relative; flex: 0 1 49%; z-index: 2;
         #stamps {display: flex;flex-wrap:wrap;justify-content: center;
             img {margin: 10px 20px;}
         }
-        h1 { font-size: 24px; font-family: $font;color: #000; font-weight: 400; line-height: 1; margin-top: 50px;
-            span {letter-spacing: normal;text-transform:none;display: block; font-weight: 200; font-size: 70px; line-height: 1; letter-spacing: 2.5px;font-family: $font;}
+        h1 { margin-bottom: 0;font-size: 36px; font-family: $font2;color: #000;letter-spacing: 4px; font-weight: 400; line-height: 1; margin-top: 50px;text-transform:uppercase;
+            span {letter-spacing: normal;text-transform:none;display: block; font-weight: 800; font-size: 70px; line-height: 1; letter-spacing: 2.5px;font-family: $font;}
         }
     }
   }
@@ -216,7 +230,7 @@ header{position:relative;padding:5px 10px;background-color:$secondary;
             h3 {font-size: 24px; font-weight: 400;}
             figure { position: relative; width:fit-content; margin: auto;
                 img {z-index: 2; box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); position: relative;}
-                &:before, &:after {position: absolute; content: ''; background: $primary; width: 200px; height: 150px; box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); top: -15px; left: -15px; z-index: 1;}
+                &:before, &:after {position: absolute; content: ''; background: $tertiary; width: 200px; height: 150px; box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); top: -15px; left: -15px; z-index: 1;}
                 &:after {top: auto; left: auto; bottom: -15px; right: -15px;}
             }
         }
@@ -276,10 +290,10 @@ header{position:relative;padding:5px 10px;background-color:$secondary;
     .btn {min-width: 350px;}
 }
 
-.bkgrd {background-color: #EFEEE7;}
+.bkgrd {background-color: #EBEBEB;}
 
-#reviews{position:relative;padding:50px 10px 70px;text-align:center;z-index: 101;
-    h2{text-align: center;}
+#reviews{position:relative;padding:40px 10px;text-align:center;z-index: 101;background: $tertiary;
+    h2{text-align: center;color: #fff;}
     .btn {margin: 40px auto;color: #000;
         &:hover {background-color: $tertiary;color: #fff;}
     }
@@ -288,20 +302,24 @@ header{position:relative;padding:5px 10px;background-color:$secondary;
 #rotate{max-width:1250px;margin:50px auto 10px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around; flex-wrap: wrap;
     .review{background-color:#fff; border-radius:5px;padding:10px;-webkit-box-flex:1;-ms-flex:1;flex:1;margin:10px;position:relative; max-width: 380px; box-shadow: 0px 6px 15px rgba(45, 134, 133, 0.5); flex: 0 1 380px;
         &:nth-of-type(2) {
-            p {font-size: 26px;line-height: 25px;}
+            p {font-size: 26px;line-height: 27px;}
         }
-        > div {height: 100%;min-height: 560px; margin: auto; border: 2px solid $secondary; border-radius: 10px; padding: 60px 15px;}}
+        > div {height: 100%;min-height: 560px; margin: auto; border: 2px solid $secondary; border-radius: 10px; padding: 60px 15px 35px;display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .author-section {align-self: flex-end;}
+        }}
     .review:after {display: block; position: absolute; border: 2px solid $tertiary; width: 200px; height: 300px; border-radius: 10px; bottom: 0;}
     span{display:table;width:60px;height:60px;background-color:#fff;border-radius:50%;line-height:60px;position:absolute;top:-25px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:12;box-shadow:0 1px 8px 0 rgba(0,0,0,0.23);
         img{vertical-align:middle;display:inline}}
-    p{color:$text;font:400 27px/30px $font2; text-align:center;max-width:95%;margin:10px auto; }
+    p{color:$text;font:400 26px/27px $font2; text-align:center;max-width:95%;margin:10px auto; }
     author{text-transform:uppercase;font-weight:700;display:flex;text-align:center;justify-content:center;align-items:center; color: $text; font-family: $font2; letter-spacing: 1.8px; font-weight: 600; margin-top: 10px;}
     star{font-size:17px;letter-spacing:7px;margin:6px}
 }
 
 footer{overflow:hidden; padding:70px 0 0;
     .phy {color: #fff; font-size: 20px; display: block; position: relative;padding-left: 40px;
-        &:before {position: absolute; left: 0; top: 8px; font-family: fontello; content: '\e948'; color: $primary;  font-size: 24px;}
+        &:before {position: absolute; left: 0; top: 8px; font-family: fontello; content: '\e809'; color: $primary;  font-size: 24px;}
         &:hover {color: $primary;}    
         }
     .pho {color: #fff; display: block; position: relative; font: 600 40px/1.1 $font; margin: 35px 0 20px; padding-left: 40px;
@@ -309,8 +327,8 @@ footer{overflow:hidden; padding:70px 0 0;
         &:hover {color: $primary;}
     }
     .split{justify-content:space-between;max-width:1160px; padding: 0; align-items:flex-start;margin:auto;margin-bottom:70px;
-        article{flex: 0 1 500px; background-color: $secondary;padding:85px 60px; margin: 0; align-self: center; border-radius: 8px;
-            h2{font:200 73px/1 $font2;color:#fff; margin:0 auto 30px;text-transform: none;}
+        article{flex: 0 1 500px; background-color: $tertiary;padding:85px 60px; margin: 0; align-self: center; border-radius: 8px;
+            h2{font:800 70px/1 $font;color:#fff; margin:0 auto 30px;text-transform: none;}
             .btn {width: 100%; text-align: center; font-size: 20px;background-color: $tertiary;color: #000;}
         }
         figure p {text-align: center;}
@@ -332,14 +350,15 @@ footer{overflow:hidden; padding:70px 0 0;
 
 .insurance {max-width: 1200px; margin: 50px auto 0;padding: 40px 15px 80px;
     article {
-        h2 { margin-bottom: 15px; font-family: $font; font-size: 60px;text-transform:uppercase;
-            small {display: block;text-transform: none;color: $text; font-size: 30px;font-weight: 400;}
+        h2 { margin-bottom: 15px; font-family: $font; font-size: 60px;color: $text;
+            small {display: block;text-transform: none;font-family: $font2;color: $text; font-size: 30px;font-weight: 400;}
         }
         #insurance-list {display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             margin: 25px auto;
             flex-wrap: wrap;
+            span {margin: 0 30px;}
         }
         > small {opacity: 0.4;
             font-size: 14px;}
@@ -351,7 +370,7 @@ footer{overflow:hidden; padding:70px 0 0;
     background-color: #EBEAE8;
 }
 
-.copy {margin-top:20px;padding:40px 10px; background-color:$secondary; margin:auto;text-transform:uppercase; font:500 16px/1.4 $font2; color:#fff;
+.copy {margin-top:20px;padding:40px 10px; background-color:#000; margin:auto;text-transform:uppercase; font:500 16px/1.4 $font2; color:#fff;
    a, p {font:500 16px/1.4 $font2; color:$primary;}
     p {margin: 20px auto; max-width: 1090px; letter-spacing: 0.2em;}
     a:hover{color:$tertiary;text-decoration:none}
