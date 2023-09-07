@@ -42,14 +42,14 @@ $text: #000;
 /* FIXED TABS */
 #fixed-tabs { display:none;position: fixed; right: 0; text-align: center; line-height: 1; font-size: 0; z-index: 510;}
 #fixed-tabs a { font-size: 12px; background-color: #7d7e82; color: #fff; position: relative; overflow: hidden; transition: width .3s, background-color .3s;}
-#fixed-tabs i { font-size: 16px; margin-bottom: -5px;color: #000; }
+#fixed-tabs i { font-size: 16px; margin-bottom: -5px;color: #fff; }
 #fixed-tabs i, #fixed-tabs i:before { margin: 0 3px 0 0; }
-#fixed-tabs em { font-size: 14px; font-weight: 700;font-style: normal; text-transform: uppercase;color: #000; }
+#fixed-tabs em { font-size: 14px; font-weight: 700;font-style: normal; text-transform: uppercase;color: #fff; }
 #fixed-tabs strong { font-weight: 900; }
 #fixed-tabs .ra {flex: 2;}
 #fixed-tabs .ra, #fixed-tabs .map { background-color: $primary; }
 #fixed-tabs .call em, #fixed-tabs .call i {color: #fff;}
-#fixed-tabs .call {background-color: $secondary;color: $text;}
+#fixed-tabs .call {background-color: $tertiary;color: #fff;}
 @media (max-width:1000px) {
   #fixed-tabs { bottom: 0; width: 100%; box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
   #fixed-tabs a { padding: 12px 0; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
@@ -107,7 +107,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 				justify-content: center;
 				border-radius: 0;
 				font-size: 16px;
-                margin: 0;
+                min-width: auto;
 				text-transform: uppercase;
                 background-color: $primary;
 				span {
@@ -115,6 +115,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 				  }
 			}
 			.phone, .btn {
+                margin: 0;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
@@ -430,6 +431,7 @@ footer{overflow:hidden; padding:70px 0 0;
         address { margin-left: 0;
             .address{display:none;}
         }
+        #header-btn {display:none;}
         .flex-ed{justify-content:space-around}
         .logo {position:relative;margin: 10px auto 20px;}
         padding: 0;
@@ -454,7 +456,12 @@ footer{overflow:hidden; padding:70px 0 0;
     #reviews{padding:50px 15px 10px;}
     #review-container{flex-wrap:wrap}
     #patients{display:block}
-    #common article h2, .insurance article h2 {font-size: 50px;}
+    #common article h2, .insurance article h2 {font-size: 40px;}
+    #common h2, #same-day h2 {
+        position: relative;padding-bottom: 30px;
+        margin-bottom: 20px;
+        &:before {content: "";position: absolute;width: 200px;height: 2px; background-color: $text;bottom: 0;left: 0;right: 0;margin: auto;}
+    }
     footer  {
         h2{font-size:50px}
         .split{justify-content:center; flex-wrap: wrap;}
@@ -497,7 +504,7 @@ footer{overflow:hidden; padding:70px 0 0;
     #rotate .review > div {min-height: 560px;}
     .safe-bar span:last-of-type{display:block; font-size: 0}
 
-    #banner { border-color: $secondary;
+    #banner {
         .container{flex-wrap:wrap}
         figure{margin:0;padding-bottom:0;
             img{margin:0 auto;}
@@ -566,7 +573,7 @@ footer{overflow:hidden; padding:70px 0 0;
             }
         }
         .hours {
-            label {width: 120px;}
+            label {width: 110px;}
             &:before {
                 top: 10px;
             }
@@ -590,7 +597,7 @@ footer{overflow:hidden; padding:70px 0 0;
 @media (max-width: 400px) {
     #google .review-stamp {left: 39%;}
     header .btn-alt{font-size:14px}
-    .safe-bar{font-size:15px}
+    .safe-bar{font-size:18px}
     #dentist .caption{font-size:14px}
     h2 {font-size: 42px;}
     footer{

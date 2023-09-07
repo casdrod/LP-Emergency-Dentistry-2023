@@ -482,7 +482,7 @@ footer {
 #fixed-tabs i {
   font-size: 16px;
   margin-bottom: -5px;
-  color: #000;
+  color: #fff;
 }
 
 #fixed-tabs i, #fixed-tabs i:before {
@@ -494,7 +494,7 @@ footer {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
 }
 
 #fixed-tabs strong {
@@ -514,8 +514,8 @@ footer {
 }
 
 #fixed-tabs .call {
-  background-color: #2E2D2B;
-  color: #000;
+  background-color: #00375D;
+  color: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -695,7 +695,7 @@ header #nav #mobile-btns .btn {
   justify-content: center;
   border-radius: 0;
   font-size: 16px;
-  margin: 0;
+  min-width: auto;
   text-transform: uppercase;
   background-color: #F2C845;
 }
@@ -704,6 +704,7 @@ header #nav #mobile-btns .btn span {
   font-size: 28px;
 }
 header #nav #mobile-btns .phone, header #nav #mobile-btns .btn {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1609,6 +1610,9 @@ footer figure {
   header address .address {
     display: none;
   }
+  header #header-btn {
+    display: none;
+  }
   header .flex-ed {
     justify-content: space-around;
   }
@@ -1678,7 +1682,23 @@ footer figure {
     display: block;
   }
   #common article h2, .insurance article h2 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  #common h2, #same-day h2 {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  #common h2:before, #same-day h2:before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
   footer h2 {
     font-size: 50px;
@@ -1806,9 +1826,6 @@ footer figure {
   .safe-bar span:last-of-type {
     display: block;
     font-size: 0;
-  }
-  #banner {
-    border-color: #2E2D2B;
   }
   #banner .container {
     flex-wrap: wrap;
@@ -1983,7 +2000,7 @@ footer figure {
     text-align: left;
   }
   footer .hours label {
-    width: 120px;
+    width: 110px;
   }
   footer .hours:before {
     top: 10px;
@@ -2039,7 +2056,7 @@ footer figure {
     font-size: 14px;
   }
   .safe-bar {
-    font-size: 15px;
+    font-size: 18px;
   }
   #dentist .caption {
     font-size: 14px;
