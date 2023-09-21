@@ -506,7 +506,7 @@ footer {
 }
 
 #fixed-tabs .ra, #fixed-tabs .map {
-  background-color: #F2C845;
+  background-color: #0081B9;
 }
 
 #fixed-tabs .call em, #fixed-tabs .call i {
@@ -514,7 +514,7 @@ footer {
 }
 
 #fixed-tabs .call {
-  background-color: #00375D;
+  background-color: #0F3457;
   color: #fff;
 }
 
@@ -548,13 +548,13 @@ footer {
 body {
   position: relative;
   background-color: #fff;
-  font-family: "Chivo", sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: center;
 }
 
 p {
-  font: 400 20px/30px "Chivo", sans-serif;
-  color: #000;
+  font: 400 20px/30px "Inter", sans-serif;
+  color: #121212;
 }
 
 a {
@@ -564,14 +564,15 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Chivo", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h2 {
-  color: #00375D;
+  color: #121212;
   text-align: center;
-  font-size: 60px;
-  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "pragmatica-extended", sans-serif;
   line-height: 52px;
   letter-spacing: -1px;
   font-weight: 200;
@@ -604,22 +605,22 @@ header .address {
   text-align: left;
   display: flex;
   color: #000;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.25;
   font-weight: 300;
   letter-spacing: 0.55px;
 }
 header .address:hover {
-  color: #F2C845;
+  color: #0081B9;
 }
 header .address i:before {
-  color: #F2C845;
+  color: #0081B9;
   font-size: 22px;
   margin-left: -10px;
   margin-right: 15px;
 }
 header #nav {
-  padding: 20px 10px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   max-width: 1350px;
@@ -634,10 +635,10 @@ header #nav .btn {
   margin: 0;
   padding: 15px 25px;
   font-size: 20px;
-  background-color: #F2C845;
+  background-color: #0081B9;
   max-width: 470px;
   color: #000;
-  font-family: "Manrope", sans-serif;
+  font-family: "pragmatica-extended", sans-serif;
   font-weight: 600;
   border-radius: 20px;
 }
@@ -652,24 +653,24 @@ header #nav .btn span {
   font-weight: 600;
 }
 header #nav .btn:hover {
-  background-color: #2E2D2B;
+  background-color: #0F3457;
   color: #fff;
 }
 header #nav #header-details .pho {
   display: flex;
   font-size: 41px;
   align-items: center;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 10px;
-  color: #000;
+  color: #121212;
 }
 header #nav #header-details .pho i:before {
-  color: #F2C845;
+  color: #0081B9;
   margin-right: 10px;
   margin-left: 0;
 }
 header #nav #header-details .pho:hover {
-  color: #F2C845;
+  color: #0081B9;
 }
 header #nav #header-details a i:before {
   font-size: 22px;
@@ -679,7 +680,11 @@ header #nav #header-details, header #nav #header-btn {
 }
 header #nav #header-btn a {
   max-width: 390px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
   margin: auto;
+  max-width: 440px;
 }
 header #nav #mobile-btns {
   width: 100%;
@@ -697,11 +702,13 @@ header #nav #mobile-btns .btn {
   font-size: 16px;
   min-width: auto;
   text-transform: uppercase;
-  background-color: #F2C845;
+  background-color: #0081B9;
+  font-family: "Inter", sans-serif;
+  color: #fff;
 }
 header #nav #mobile-btns .btn span {
   width: 100%;
-  font-size: 28px;
+  font-size: 26px;
 }
 header #nav #mobile-btns .phone, header #nav #mobile-btns .btn {
   margin: 0;
@@ -709,6 +716,7 @@ header #nav #mobile-btns .phone, header #nav #mobile-btns .btn {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  font-weight: 700;
 }
 header #nav #mobile-btns .phone span, header #nav #mobile-btns .btn span {
   width: 100%;
@@ -733,7 +741,7 @@ header #nav #mobile-btns #mobile-special .container {
   padding: 5px;
 }
 header #nav #mobile-btns #mobile-special .container h4 {
-  color: #00375D;
+  color: #0F3457;
   font-size: 22px;
   margin: 0;
 }
@@ -745,7 +753,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 .address {
-  color: #000;
+  color: #121212;
   font-size: 20px;
   line-height: 1.25;
   font-weight: 400;
@@ -754,18 +762,18 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 .phone {
-  color: #F2C845;
+  color: #0081B9;
   font-size: 35px;
   line-height: 1.1;
   font-weight: 700;
 }
 .phone:hover {
-  color: #000;
+  color: #121212;
 }
 
 .phone-call p {
   margin: auto;
-  font-family: "Chivo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   letter-spacing: 1.4px;
   font-weight: 700;
@@ -773,7 +781,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 .address:hover {
-  color: #00375D;
+  color: #0F3457;
 }
 
 .fix-nav header {
@@ -798,7 +806,7 @@ header #nav #mobile-btns #mobile-special .container small {
 
 .btn, .btn-alt {
   transition: 0.3s all ease;
-  border: 1px solid #F2C845;
+  border: 1px solid #0081B9;
   min-width: 300px;
   cursor: pointer;
   position: relative;
@@ -806,15 +814,15 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 3px auto;
   padding: 15px 25px;
   color: #fff;
-  font: 700 16px/1 "Chivo", sans-serif;
+  font: 700 16px/1 "Inter", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: border 0.3s;
-  background-color: #F2C845;
+  background-color: #0081B9;
   border-radius: 50px;
 }
 .btn:hover, .btn:hover, .btn-alt:hover, .btn-alt:hover {
-  background-color: #2E2D2B;
+  background-color: #F3F3F0;
   color: #000;
 }
 
@@ -852,10 +860,10 @@ header #nav #mobile-btns #mobile-special .container small {
 .safe-bar {
   width: 100%;
   position: relative;
-  background-color: #00375D;
+  background-color: #0F3457;
   z-index: 10;
   color: #fff;
-  font: 400 24px/1.2 "Chivo", sans-serif;
+  font: 400 24px/1.2 "Inter", sans-serif;
   padding: 9px 10px;
   text-align: center;
 }
@@ -864,8 +872,8 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 #banner {
-  border-bottom: 5px solid #F2C845;
-  background-color: #F6F4F2;
+  border-bottom: 10px solid #0F3457;
+  background-color: #F3F3F0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -905,18 +913,18 @@ header #nav #mobile-btns #mobile-special .container small {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
   text-transform: uppercase;
-  color: #000;
-  font-family: "Manrope", sans-serif;
+  color: #121212;
+  font-family: "pragmatica-extended", sans-serif;
   text-transform: uppercase;
   left: 50%;
   transform: translateX(-50%);
 }
 #banner figure .caption a {
-  color: #000;
+  color: #121212;
   letter-spacing: 1.6px;
 }
 #banner figure .caption a:hover {
-  color: #F2C845;
+  color: #0081B9;
 }
 #banner .flex-ed {
   display: flex;
@@ -938,24 +946,23 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 #banner article h1 {
   margin-bottom: 0;
-  font-size: 36px;
-  font-family: "Chivo", sans-serif;
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
   color: #000;
   letter-spacing: 4px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1;
   margin-top: 50px;
   text-transform: uppercase;
 }
 #banner article h1 span {
-  letter-spacing: normal;
-  text-transform: none;
   display: block;
-  font-weight: 800;
-  font-size: 70px;
-  line-height: 1;
-  letter-spacing: 2.5px;
-  font-family: "Manrope", sans-serif;
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: normal;
+  font-family: "pragmatica-extended", sans-serif;
 }
 
 #common {
@@ -967,7 +974,7 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 20px auto;
 }
 #common article h2 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 200;
   margin: 40px auto;
 }
@@ -1000,7 +1007,7 @@ header #nav #mobile-btns #mobile-special .container small {
 #common .flex-ed div figure:before, #common .flex-ed div figure:after {
   position: absolute;
   content: "";
-  background: #00375D;
+  background: #0F3457;
   width: 200px;
   height: 150px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
@@ -1016,18 +1023,17 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 #common .btn {
   min-width: 440px;
-  background-color: #00375D;
+  background-color: #0F3457;
   border: none;
   color: #000;
   font-size: 20px;
 }
 #common .btn:hover {
-  background-color: #F2C845;
+  background-color: #0081B9;
 }
 
 #same-day .btn {
-  background-color: #F2C845;
-  color: #000;
+  background-color: #0081B9;
   border: none;
   font-size: 20px;
   letter-spacing: 1px;
@@ -1035,7 +1041,7 @@ header #nav #mobile-btns #mobile-special .container small {
   text-align: center;
 }
 #same-day .btn:hover {
-  background-color: #00375D;
+  background-color: #0F3457;
 }
 
 /* ------------- Controls -------------- */
@@ -1049,7 +1055,7 @@ header #nav #mobile-btns #mobile-special .container small {
 
 /* ------------- Arrows -------------- */
 .slick-arrow {
-  color: #00375D;
+  color: #0F3457;
   background-color: transparent;
   font-family: fontello;
   font-size: 50px;
@@ -1071,7 +1077,7 @@ header #nav #mobile-btns #mobile-special .container small {
   margin-left: -4px;
 }
 .slick-arrow:hover {
-  color: #2E2D2B;
+  color: #F3F3F0;
 }
 
 #next {
@@ -1105,7 +1111,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 .slick-dots .slick-active span {
   opacity: 1;
-  background-color: #F2C845;
+  background-color: #0081B9;
 }
 
 .slick-dots li button {
@@ -1161,17 +1167,17 @@ header #nav #mobile-btns #mobile-special .container small {
   max-width: 90%;
 }
 #smiles .arrow {
-  color: #F2C845;
+  color: #0081B9;
 }
 #smiles .arrow:hover {
-  color: #2E2D2B;
+  color: #F3F3F0;
 }
 #smiles .btn {
   min-width: 350px;
 }
 
 .bkgrd {
-  background-color: #EBEBEB;
+  background-color: #F3F3F0;
 }
 
 #reviews {
@@ -1179,18 +1185,17 @@ header #nav #mobile-btns #mobile-special .container small {
   padding: 40px 10px;
   text-align: center;
   z-index: 101;
-  background: #00375D;
+  background: #F3F3F0;
 }
 #reviews h2 {
   text-align: center;
-  color: #fff;
+  margin: 50px auto;
 }
 #reviews .btn {
   margin: 40px auto;
-  color: #000;
 }
 #reviews .btn:hover {
-  background-color: #00375D;
+  background-color: #0F3457;
   color: #fff;
 }
 
@@ -1213,14 +1218,13 @@ header #nav #mobile-btns #mobile-special .container small {
   flex: 0 1 380px;
 }
 #rotate .review:nth-of-type(2) p {
-  font-size: 26px;
   line-height: 27px;
 }
 #rotate .review > div {
   height: 100%;
   min-height: 560px;
   margin: auto;
-  border: 2px solid #2E2D2B;
+  border: 2px solid #F3F3F0;
   border-radius: 10px;
   padding: 60px 15px 35px;
   display: flex;
@@ -1233,7 +1237,7 @@ header #nav #mobile-btns #mobile-special .container small {
 #rotate .review:after {
   display: block;
   position: absolute;
-  border: 2px solid #00375D;
+  border: 2px solid #0F3457;
   width: 200px;
   height: 300px;
   border-radius: 10px;
@@ -1258,8 +1262,8 @@ header #nav #mobile-btns #mobile-special .container small {
   display: inline;
 }
 #rotate p {
-  color: #000;
-  font: 400 26px/27px "Chivo", sans-serif;
+  color: #121212;
+  font: 400 26px/27px "Inter", sans-serif;
   text-align: center;
   max-width: 95%;
   margin: 10px auto;
@@ -1271,8 +1275,8 @@ header #nav #mobile-btns #mobile-special .container small {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: #000;
-  font-family: "Chivo", sans-serif;
+  color: #121212;
+  font-family: "Inter", sans-serif;
   letter-spacing: 1.8px;
   font-weight: 600;
   margin-top: 10px;
@@ -1300,17 +1304,17 @@ footer .phy:before {
   top: 8px;
   font-family: fontello;
   content: "\e809";
-  color: #F2C845;
+  color: #0081B9;
   font-size: 24px;
 }
 footer .phy:hover {
-  color: #F2C845;
+  color: #0081B9;
 }
 footer .pho {
   color: #fff;
   display: block;
   position: relative;
-  font: 600 40px/1.1 "Manrope", sans-serif;
+  font: 400 40px/1.1 "Inter", sans-serif;
   margin: 35px 0 20px;
   padding-left: 40px;
 }
@@ -1320,15 +1324,15 @@ footer .pho:before {
   top: 3px;
   font-family: fontello;
   content: "\e80b";
-  color: #F2C845;
+  color: #0081B9;
   font-size: 30px;
 }
 footer .pho:hover {
-  color: #F2C845;
+  color: #0081B9;
 }
 footer .split {
   justify-content: space-between;
-  max-width: 1160px;
+  max-width: 1200px;
   padding: 0;
   align-items: flex-start;
   margin: auto;
@@ -1336,23 +1340,22 @@ footer .split {
 }
 footer .split article {
   flex: 0 1 500px;
-  background-color: #00375D;
-  padding: 85px 60px;
+  background-color: #0F3457;
+  padding: 85px 50px;
   margin: 0;
   align-self: center;
   border-radius: 8px;
 }
 footer .split article h2 {
-  font: 800 70px/1 "Manrope", sans-serif;
+  font: 800 60px/1 "pragmatica-extended", sans-serif;
   color: #fff;
   margin: 0 auto 30px;
-  text-transform: none;
 }
 footer .split article .btn {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  background-color: #00375D;
+  background-color: #0F3457;
   color: #000;
 }
 footer .split figure p {
@@ -1377,7 +1380,7 @@ footer figure {
   top: 25px;
   font-family: fontello;
   content: "\e839";
-  color: #F2C845;
+  color: #0081B9;
   font-size: 30px;
 }
 
@@ -1391,7 +1394,7 @@ footer figure {
   font-size: 18px;
   color: #fff;
   line-height: 34px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .hours p span {
   text-transform: uppercase;
@@ -1415,21 +1418,21 @@ footer figure {
 }
 
 .insurance {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 50px auto 0;
   padding: 40px 15px 80px;
 }
 .insurance article h2 {
   margin-bottom: 15px;
-  font-family: "Manrope", sans-serif;
+  font-family: "pragmatica-extended", sans-serif;
   font-size: 60px;
-  color: #000;
+  color: #121212;
 }
 .insurance article h2 small {
   display: block;
-  text-transform: none;
-  font-family: "Chivo", sans-serif;
-  color: #000;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 4px;
+  color: #121212;
   font-size: 30px;
   font-weight: 400;
 }
@@ -1463,12 +1466,12 @@ footer figure {
   background-color: #000;
   margin: auto;
   text-transform: uppercase;
-  font: 500 16px/1.4 "Chivo", sans-serif;
+  font: 700 18px/1.4 "Inter", sans-serif;
   color: #fff;
 }
 .copy a, .copy p {
-  font: 500 16px/1.4 "Chivo", sans-serif;
-  color: #F2C845;
+  font: 700 18px/1.4 "Inter", sans-serif;
+  color: #0081B9;
 }
 .copy p {
   margin: 20px auto;
@@ -1476,19 +1479,19 @@ footer figure {
   letter-spacing: 0.2em;
 }
 .copy a:hover {
-  color: #00375D;
+  color: #0F3457;
   text-decoration: none;
 }
-.copy span {
-  margin: 0 2px;
+.copy span:not(:first-of-type) {
+  margin: 0 10px;
 }
 
 ::-moz-placeholder {
-  color: #000;
+  color: #121212;
 }
 
 ::placeholder {
-  color: #000;
+  color: #121212;
 }
 
 #lp-appointment-form {
@@ -1502,7 +1505,7 @@ footer figure {
   font-size: 50px;
   font-weight: 700;
   margin: 10px auto 40px;
-  color: #000;
+  color: #121212;
 }
 #lp-appointment-form > p {
   max-width: 700px;
@@ -1522,7 +1525,7 @@ footer figure {
   display: table;
   margin: 10px auto;
   background-color: #d3d3d3;
-  color: #000;
+  color: #121212;
   border-radius: 5px;
   padding: 15px;
   font-size: 16px;
@@ -1539,7 +1542,7 @@ footer figure {
 #lp-appointment-form textarea:focus, #lp-appointment-form input:focus, #lp-appointment-form button:focus {
   outline-style: solid;
   outline-width: thin;
-  outline-color: #2E2D2B;
+  outline-color: #F3F3F0;
 }
 #lp-appointment-form .submitBtn {
   text-align: center;
@@ -1547,10 +1550,10 @@ footer figure {
   margin: auto;
   display: table;
   font-size: 20px;
-  color: #000;
 }
 #lp-appointment-form .submitBtn:hover {
   color: #fff;
+  background-color: #0F3457;
 }
 
 @media (max-width: 1430px) {
@@ -1694,7 +1697,7 @@ footer figure {
     position: absolute;
     width: 200px;
     height: 2px;
-    background-color: #000;
+    background-color: #121212;
     bottom: 0;
     left: 0;
     right: 0;
@@ -1708,7 +1711,11 @@ footer figure {
     flex-wrap: wrap;
   }
   footer .split article {
-    margin: 20px auto;
+    margin: 50px 20px;
+    border-radius: 20px;
+  }
+  footer .split article h2 {
+    font-size: 44px;
   }
   #rotate {
     margin-top: 30px;
@@ -1720,6 +1727,9 @@ footer figure {
     flex: 0 1 100%;
     order: -1;
   }
+  #banner figure figcaption {
+    font-size: 14px;
+  }
   #banner article {
     padding: 20px 10px 50px;
     flex: 0 100%;
@@ -1728,11 +1738,11 @@ footer figure {
     background-color: #F6F4F2;
   }
   #banner article h1 span {
-    font-size: 56px;
+    font-size: 48px;
   }
   #banner {
     background-image: none;
-    background-color: #2E2D2B;
+    background-color: #F3F3F0;
     flex-wrap: wrap;
   }
   #banner figure figcaption {
@@ -1751,6 +1761,16 @@ footer figure {
   }
   .split h2 {
     text-align: center;
+  }
+  .insurance {
+    padding-bottom: 0;
+  }
+  .insurance article #insurance-list span {
+    margin: 10px auto;
+  }
+  .insurance article h2 small {
+    letter-spacing: normal;
+    font-size: 24px;
   }
 }
 @media (max-width: 880px) {
@@ -1777,7 +1797,7 @@ footer figure {
   }
   header .logo {
     width: 100%;
-    margin: 25px;
+    margin: 15px;
     max-width: none;
   }
   header .btn-alt {
@@ -1915,7 +1935,7 @@ footer figure {
     display: block;
   }
   footer .split .footer-maps > div h3, footer .split .footer-maps > div address a {
-    color: #000;
+    color: #121212;
   }
   footer .split .footer-maps > div iframe {
     display: none;
@@ -1996,11 +2016,11 @@ footer figure {
     text-align: left;
   }
   footer .split article .pho {
-    font-size: 36px;
+    font-size: 32px;
     text-align: left;
   }
   footer .hours label {
-    width: 110px;
+    width: 100px;
   }
   footer .hours:before {
     top: 10px;
@@ -2056,13 +2076,13 @@ footer figure {
     font-size: 14px;
   }
   .safe-bar {
-    font-size: 18px;
+    font-size: 15px;
   }
   #dentist .caption {
     font-size: 14px;
   }
   h2 {
-    font-size: 42px;
+    font-size: 40px;
   }
   footer .split article {
     margin-bottom: 0;
