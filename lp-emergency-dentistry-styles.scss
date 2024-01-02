@@ -31,12 +31,16 @@
 .slick-dots li { padding:0px!important; display: inline-block; margin: 0 5px;}
 .slick-dots li:before { display:none; }
 
+@font-face {
+    font-family: Morion;
+    src: url(Morion-Beta.ttf);
+}
 
-$primary: #0081B9;
-$secondary: #F3F3F0;
-$tertiary: #0F3457;
-$font: "pragmatica-extended", sans-serif;
-$font2: 'Inter', sans-serif;
+$primary: #52A8FF;
+$secondary: #E1ECF7;
+$tertiary: #577399;
+$font: Morion, sans-serif;
+$font2: "europa", sans-serif;
 $text: #121212;
 
 /* FIXED TABS */
@@ -63,14 +67,14 @@ body{position:relative;background-color:#fff;font-family: $font2; text-align:cen
 p{font:400 20px/30px $font2; color: $text;}
 a{display:inline-block;text-decoration:none;cursor:pointer}
 h1,h2,h3,h4,h5,h6{font-family: $font2;}
-h2{color:$text;text-align:center;text-transform:uppercase;font-size:40px; font-family: $font;line-height:52px;letter-spacing: -1px; font-weight: 200; line-height: 1.2;}
+h2{color:#323232;text-align:center;font-size:60px; font-family: $font;line-height:52px;letter-spacing: -1px; font-weight: 600; line-height: 1.2;}
 h3{font-size:32px;line-height:1.41}
 .subpage {max-width: 1200px; margin: 100px auto; text-align: center; padding: 15px;}
 
 /* header */
 header{position:relative;padding:0;z-index:100;background-color: #fff;
     address{padding:0 8px;}
-    .address{text-align:left;display:flex;color: #000;font-size:19px;line-height:1.25;font-weight:300;letter-spacing:.55px;
+    .address{text-align:left;display:flex;color: #000;font-size:22px;line-height:1.25;font-weight:300;letter-spacing:.55px;
         &:hover{color:$primary}
         i:before {color: $primary;font-size: 22px;margin-left: -10px;margin-right: 15px;}
     }
@@ -81,12 +85,17 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
             &:hover {background-color: $tertiary; color: #fff;}
 		}
         #header-details {
-            .pho {display:flex;font-size: 41px;align-items:center;font-weight: 400;margin-bottom: 10px;color: $text;
+            .pho {display:flex;font-size: 41px;align-items:center;font-weight: 600;color: $text;
                 i {
                     &:before {color: $primary;margin-right: 10px;
                         margin-left: 0;}
                 }
                 &:hover{color:$primary}
+            }
+            .address {margin-bottom: 10px;
+                i {
+                    &:before {}
+                }
             }
             a {
                 i {
@@ -96,7 +105,8 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         }
         #header-details, #header-btn {flex: 1;}
         #header-btn a {max-width: 390px;color: #fff;font-family: $font2;font-size: 20px;
-            margin: auto;max-width: 440px;}
+            margin: auto;max-width: 375px;border-radius: 30px;
+            min-width: auto;}
 		#mobile-btns {
 			width: 100%;display:flex;
 			> * {flex: 1;}
@@ -108,6 +118,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 				border-radius: 0;
 				font-size: 16px;
                 min-width: auto;
+                font-weight: 700;
 				text-transform: uppercase;
                 background-color: $primary;
                 font-family: $font2;
@@ -122,13 +133,12 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 				flex-wrap: wrap;
 				justify-content: center;
 				align-content: center;
-                font-weight: 700;
 				span {
 					width: 100%;
 				}
 			  }
-			.phone {background-color: #EBEBEB;color: #000;font-size: 20px;line-height: 1.3;
-				span {text-transform: uppercase;font-size: 16px;font-weight: 700;letter-spacing: 1px;color: #000;}
+			.phone {background-color: #EBEBEB;color: #000;font-size: 20px;line-height: 1.3;font-weight: 400;
+				span {text-transform: uppercase;font-size: 16px;font-weight: 600;letter-spacing: 1px;color: #000;}
 			}
 			#mobile-special {
 				.container {
@@ -152,13 +162,13 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         img {max-height: 120px;}}
     address {margin-left: 0;}}
 
-.btn,.btn-alt{transition: 0.3s all ease;border: 1px solid $primary;min-width: 300px;cursor:pointer;position:relative;display:inline-block;margin:3px auto;padding:15px 25px;color:#fff;font:700 16px/1 $font2; text-transform: uppercase; letter-spacing: 0.1em;transition:border .3s;background-color:$primary;border-radius: 50px;
-    &:hover, &:hover{background-color:$secondary;color:#000;}
+.btn,.btn-alt{transition: 0.3s all ease;border: 1px solid $primary;min-width: 300px;cursor:pointer;position:relative;display:inline-block;margin:3px auto;padding:15px 25px;color:#fff;font:700 20px/1 $font2; text-transform: uppercase; letter-spacing: 0.1em;background-color:$primary;border-radius: 50px;
+    &:hover{background-color:$tertiary;}
 }
 
 .split{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width: 1200px; margin: auto; padding: 30px 10px 50px;
     article{margin:10px;flex:0 1 45%; text-align: left;}
-    h2 {text-align: left; font-weight: 200;margin-bottom: 10px;}
+    h2 {text-align: left; margin-bottom: 10px;line-height: 1;}
     figure {flex: 0 1 45%;}
     figure img{position:relative; max-width: 550px;}
     &.even figure{order:-1;margin-right:40px}
@@ -169,7 +179,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
     span {margin: 0 40px;}
 }
 
-#banner {border-bottom: 10px solid $tertiary;background-color: #F3F3F0;
+#banner {border-bottom: 10px solid $tertiary;background-color: $secondary;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -188,7 +198,11 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         background-color: #fff;
         text-transform: uppercase;
         font-size: 18px;
-        font-weight: 700;}
+        font-weight: 700;
+        a {color: $text;
+            &:hover {color: $primary;}
+        }
+    }
       img {
         width: 100%;
         position: relative;
@@ -219,15 +233,15 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         #stamps {display: flex;flex-wrap:wrap;justify-content: center;
             img {margin: 10px 20px;}
         }
-        h1 { margin-bottom: 0;font-size: 22px; font-family: $font2;color: #000;letter-spacing: 4px; font-weight: 700; line-height: 1; margin-top: 50px;text-transform:uppercase;
-            span {display: block; margin-top: 10px;font-weight: 200; font-size: 45px; line-height: 52px; letter-spacing: normal;font-family: $font;}
+        h1 { margin-bottom: 20px;font-size: 24px; font-family: $font2;color: #000;letter-spacing: 4px; font-weight: 400; line-height: 1; margin-top: 50px;text-transform:uppercase;
+            span {display: block; margin-top: 10px;font-weight: 600; font-size: 69px; line-height: 75px; letter-spacing: normal;font-family: $font;text-transform:none;}
         }
     }
   }
 
 #common { padding: 50px 5px;
     article {max-width: 1100px; text-align: center; margin: 20px auto;
-        h2 {font-size: 40px;font-weight: 200;margin: 40px auto;}
+        h2 {margin: 40px auto;}
     }
     .flex-ed {max-width: 980px; display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px auto;
         div {flex: 0 1 45%; margin: 30px 10px;
@@ -245,8 +259,16 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 }
 
 #same-day {
-    .btn {background-color: $primary;border:none;font-size: 20px;letter-spacing: 1px;min-width: 400px;text-align:center;
-        &:hover {background-color: $tertiary;}
+    .btn {border:none;font-size: 20px;letter-spacing: 1px;min-width: 400px;text-align:center;  }
+    figure {position: relative;
+        figcaption {position: absolute;letter-spacing: 1.5px;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 700;}
     }
 }
 
@@ -308,7 +330,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         &:nth-of-type(2) {
             p {line-height: 27px;}
         }
-        > div {height: 100%;min-height: 560px; margin: auto; border: 2px solid $secondary; border-radius: 10px; padding: 60px 15px 35px;display: flex;
+        > div {height: 100%;min-height: 560px; margin: auto; border: 2px solid $tertiary; border-radius: 10px; padding: 60px 15px 35px;display: flex;
             flex-wrap: wrap;
             justify-content: center;
             .author-section {align-self: flex-end;}
@@ -326,7 +348,7 @@ footer{overflow:hidden; padding:70px 0 0;
         &:before {position: absolute; left: 0; top: 8px; font-family: fontello; content: '\e809'; color: $primary;  font-size: 24px;}
         &:hover {color: $primary;}    
         }
-    .pho {color: #fff; display: block; position: relative; font: 400 40px/1.1 $font2; margin: 35px 0 20px; padding-left: 40px;
+    .pho {color: #fff; display: block; position: relative; font: 700 40px/1.1 $font2; margin: 35px 0 20px; padding-left: 40px;
         &:before {position: absolute; left: 0px;top: 3px; font-family: fontello; content: '\e80b'; color: $primary;  font-size: 30px;}
         &:hover {color: $primary;}
     }
@@ -355,7 +377,7 @@ footer{overflow:hidden; padding:70px 0 0;
 .insurance {max-width: 1300px; margin: 50px auto 0;padding: 40px 15px 80px;
     article {
         h2 { margin-bottom: 15px; font-family: $font; font-size: 60px;color: $text;
-            small {display: block;font-family: $font2;letter-spacing: 4px;color: $text; font-size: 30px;font-weight: 400;}
+            small {display: block;font-family: $font2;letter-spacing: 4px;color: $text; font-size: 30px;font-weight: 400;text-transform: uppercase;}
         }
         #insurance-list {display: flex;
             justify-content: center;
@@ -374,8 +396,8 @@ footer{overflow:hidden; padding:70px 0 0;
     background-color: #EBEAE8;
 }
 
-.copy {margin-top:20px;padding:40px 10px; background-color:#000; margin:auto;text-transform:uppercase; font:700 18px/1.4 $font2; color:#fff;
-   a, p {font:700 18px/1.4 $font2; color:$primary;}
+.copy {margin-top:20px;padding:40px 10px; background-color:#303542; margin:auto;text-transform:uppercase; font:400 18px/1.4 $font2; color:#fff;
+   a, p {font:400 18px/1.4 $font2; color:$primary;}
     p {margin: 20px auto; max-width: 1090px; letter-spacing: 0.2em;}
     a:hover{color:$tertiary;text-decoration:none}
     span:not(:first-of-type) {margin: 0 10px;}
@@ -460,17 +482,18 @@ footer{overflow:hidden; padding:70px 0 0;
     #review-container{flex-wrap:wrap}
     #patients{display:block}
     #common article h2, .insurance article h2 {font-size: 40px;}
-    #common h2, #same-day h2 {
+    #common h2, #same-day h2, .insurance h2 {
         position: relative;padding-bottom: 30px;
         margin-bottom: 20px;
         &:before {content: "";position: absolute;width: 200px;height: 2px; background-color: $text;bottom: 0;left: 0;right: 0;margin: auto;}
     }
+    #common {padding: 0 20px;}
+    #same-day {padding-top: 0;}
     footer  {
         h2{font-size:50px}
         .split{justify-content:center; flex-wrap: wrap;}
-        .split article {margin: 50px 20px;
-            border-radius: 20px;
-            h2 {font-size: 44px;}
+        .split article {margin: 50px 30px;border-radius: 30px;
+            h2 {font-size: 56px;}
         }
     }
     #rotate {margin-top: 30px;}
@@ -480,7 +503,7 @@ footer{overflow:hidden; padding:70px 0 0;
     }
     #banner article {padding: 20px 10px 50px;flex: 0 100%; order: -1; margin-left: auto;background-color: #F6F4F2;
         h1 {
-            span {font-size: 48px;}
+            span {font-size: 60px;line-height: 65px;}
         }
     }
     #banner {background-image: none; background-color: $secondary; flex-wrap: wrap;}
@@ -584,15 +607,17 @@ footer{overflow:hidden; padding:70px 0 0;
     .split figure img {max-width: 100%;}
     footer {
         .split {
-            article {padding: 40px 25px;margin: 0 auto;border-radius: 0;
-                .phy {text-align:left;}
-                .pho {font-size: 32px;text-align:left;}
+            article {padding: 40px 25px;
+                .phy {text-align:left;padding-left: 30px;}
+                .pho {font-size: 32px;text-align:left;padding-left: 30px;
+                    &:before {left: -5px;}
+                }
             }
         }
-        .hours {
-            label {width: 100px;}
+        .hours {padding-left: 25px;
+            label {width: 97px;}
             &:before {
-                top: 10px;
+                top: 10px;left: -6px;
             }
         }
     }
@@ -618,7 +643,7 @@ footer{overflow:hidden; padding:70px 0 0;
     #dentist .caption{font-size:14px}
     h2 {font-size: 40px;}
     footer{
-       .split article{margin-bottom:0;padding:70px 20px 20px; margin-top: 0; border-radius: 0;
+       .split article{padding:70px 20px 20px;
           p strong{font-size:30px}
           p big{font-size:32px}
       }
